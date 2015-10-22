@@ -1,0 +1,1 @@
+# Demo project to try out spring cloud
