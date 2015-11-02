@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: phonenumber-finder-ui
+
+  cloud:
+    config:
+      uri: "http://localhost:8888"

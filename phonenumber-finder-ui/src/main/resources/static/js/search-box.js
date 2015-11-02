@@ -103,25 +103,6 @@ var SearchLine = React.createClass({
     }
 });
 
-var data = [
-    {
-        id: "AVCOlFSfI3oP7QIM-DOu",
-        Nachname: "Abramidis, Alexander",
-        Abteilung: "Software Factories",
-        Raum: "",
-        Stelle: "Software Developer",
-        Telefon: ""
-    },
-    {
-        id: "AVCOlFSfI3oP7QIM-DOv",
-        Nachname: "Abu Marya, Yamen",
-        Abteilung: "Projects",
-        Raum: "5.25",
-        Stelle: "Professional Frontend Developer",
-        Telefon: "+4930 24627 312"
-    }
-];
-
 ReactDOM.render(
     <SearchBox url="http://localhost:8081/api/employees/"/>,
     document.getElementById("search-box")
