@@ -11,6 +11,7 @@
         <module>phonenumber-finder</module>
         <module>phonenumber-finder-ui</module>
         <module>config-server</module>
+        <module>eureka-server</module>
     </modules>
 
     <packaging>pom</packaging>

@@ -1,6 +1,6 @@
 spring:
   application:
-    name: phonenumber-finder-ui
+    name: eureka-server
 
   cloud:
     config:
