@@ -33,7 +33,7 @@ public class EmployeeRestControllerTest {
     @Autowired
     private WebApplicationContext webApplicationContext;
 
-    @Value("classpath:employee.json")
+    @Value("classpath:test-employee.json")
     Resource jsonFile;
 
     @Before
@@ -43,29 +43,29 @@ public class EmployeeRestControllerTest {
 
     @Test
     public void find_should_return_all_entries_on_no_term_exists() throws Exception {
-        mockMvc.perform(get("/find/"))
+        mockMvc.perform(get("/api/employees/"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$", hasSize(20)));
+                .andExpect(jsonPath("$", hasSize(10)));
     }
 
     @Test
     public void find_should_honor_pageable_command() throws Exception {
-        mockMvc.perform(get("/find/?size=50"))
+        mockMvc.perform(get("/api/employees/?size=5"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$", hasSize(50)));
+                .andExpect(jsonPath("$", hasSize(5)));
     }
 
     @Test
     public void find_should_return_matched_entries_on_term_exists() throws Exception {
-        mockMvc.perform(get("/find/?term=liang"))
+        mockMvc.perform(get("/api/employees/?term=meyer"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(1)));
     }
 
     @Test
     public void find_should_return_matched_entries_on_term_substring_exists() throws Exception {
-        mockMvc.perform(get("/find/?term=alex"))
+        mockMvc.perform(get("/api/employees/?term=musterman"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$", hasSize(3)));
+                .andExpect(jsonPath("$", hasSize(2)));
     }
 }

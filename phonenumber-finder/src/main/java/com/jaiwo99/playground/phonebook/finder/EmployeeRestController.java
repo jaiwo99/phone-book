@@ -16,14 +16,13 @@ import java.util.List;
  */
 @Slf4j
 @RestController
-@RequestMapping(value = "/api/employees")
 public class EmployeeRestController {
 
     @Autowired
     private EmployeeRepository employeeRepository;
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    List<Employee> queryEmployee(@RequestParam(value = "term", required = false) String term, Pageable pageable) {
+    @RequestMapping(value = "/api/employees/", method = RequestMethod.GET)
+    public List<Employee> queryEmployee(@RequestParam(value = "term", required = false) String term, Pageable pageable) {
         final List<Employee> list = employeeRepository.fullTextSearch(term, pageable);
         log.info("Find {} employees with term: {}", list.size(), term);
         return list;

@@ -103,7 +103,7 @@ var SearchLine = React.createClass({
     }
 });
 
-ReactDOM.render(
-    <SearchBox url="http://localhost:8081/api/employees/"/>,
+React.render(
+    <SearchBox url="/api/employees/"/>,
     document.getElementById("search-box")
 );

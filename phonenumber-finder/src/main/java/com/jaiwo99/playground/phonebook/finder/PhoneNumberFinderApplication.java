@@ -6,10 +6,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.web.SpringBootServletInitializer;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.client.SpringCloudApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.io.Resource;
 
@@ -20,9 +19,8 @@ import java.util.List;
  * @author liang shi
  * @since 21.10.15
  */
-@SpringBootApplication
+@SpringCloudApplication
 @Slf4j
-@EnableDiscoveryClient
 public class PhoneNumberFinderApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {

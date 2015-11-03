@@ -1,0 +1,73 @@
+[
+  {
+    "Nachname":"max musterman",
+    "Abteilung":"Software Factories",
+    "Stelle":"Software Developer",
+    "Raum":"105",
+    "Telefon":"343"
+  },
+  {
+    "Nachname":"alice meyer",
+    "Abteilung":"Projects",
+    "Stelle":"Professional Frontend Developer",
+    "Raum":"234",
+    "Telefon":"987"
+  },
+  {
+    "Nachname":"ben musterman",
+    "Abteilung":"Software Factories",
+    "Stelle":"Software Developer",
+    "Raum":"643",
+    "Telefon":"879"
+  },
+  {
+    "Nachname":"claudia max",
+    "Abteilung":"Projects",
+    "Stelle":"Professional Frontend Developer",
+    "Raum":"865",
+    "Telefon":"345"
+  },
+  {
+    "Nachname":"bernd Whatever",
+    "Abteilung":"Software Factories",
+    "Stelle":"Software Developer",
+    "Raum":"285",
+    "Telefon":"043"
+  },
+  {
+    "Nachname":"Daniel Marcus",
+    "Abteilung":"Projects",
+    "Stelle":"Professional Frontend Developer",
+    "Raum":"573",
+    "Telefon":"498"
+  },
+  {
+    "Nachname":"Emma Winter",
+    "Abteilung":"Software Factories",
+    "Stelle":"Software Developer",
+    "Raum":"946",
+    "Telefon":"257"
+  },
+  {
+    "Nachname":"eric Stark",
+    "Abteilung":"Projects",
+    "Stelle":"Professional Frontend Developer",
+    "Raum":"357",
+    "Telefon":"348"
+  },
+  {
+    "Nachname":"thomas chrome",
+    "Abteilung":"Software Factories",
+    "Stelle":"Software Developer",
+    "Raum":"34340",
+    "Telefon":"95563"
+  },
+  {
+    "Nachname":"Mathias Firefox",
+    "Abteilung":"Projects",
+    "Stelle":"Professional Frontend Developer",
+    "Raum":"459",
+    "Telefon":"257"
+  }
+
+]
