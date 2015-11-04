@@ -1,7 +1,6 @@
 spring:
   application:
     name: phonenumber-finder-ui
-
   cloud:
     config:
       uri: "${CONFIG_SERVER_URL:http://localhost:8888}"
